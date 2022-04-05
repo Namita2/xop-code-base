@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.google.apigee.edgecallouts.TestXopHandler" duration-ms="724" started-at="2022-04-05T12:09:01Z" finished-at="2022-04-05T12:09:01Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="724" started-at="2022-04-05T12:09:01Z" finished-at="2022-04-05T12:09:01Z">
+      <class name="com.google.apigee.edgecallouts.TestXopHandler">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="52" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="acceptableContentType()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="acceptableContentType" duration-ms="289" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptableContentType -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="parseMessage()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="parseMessage" duration-ms="48" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parseMessage -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="unacceptableContentType()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="unacceptableContentType" duration-ms="22" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unacceptableContentType -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="30" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="withBogusAction()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="withBogusAction" duration-ms="10" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withBogusAction -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="20" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="withEmbedAction()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="withEmbedAction" duration-ms="26" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withEmbedAction -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="22" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="withExtractAction()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="withExtractAction" duration-ms="16" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withExtractAction -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="beforeMethod" is-config="true" duration-ms="25" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="withExtractActionMyOwn()[pri:0, instance:com.google.apigee.edgecallouts.TestXopHandler@6fb554cc]" name="withExtractActionMyOwn" duration-ms="103" started-at="2022-04-05T22:09:01Z" finished-at="2022-04-05T22:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withExtractActionMyOwn -->
+      </class> <!-- com.google.apigee.edgecallouts.TestXopHandler -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.google.apigee.edgecallouts.TestXopHandler -->
+</testng-results>

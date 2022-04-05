@@ -1,0 +1,7 @@
+com/github/danieln/multipart/PartInputStream.class
+com/github/danieln/multipart/PartInput.class
+com/github/danieln/multipart/MultipartOutput.class
+com/github/danieln/multipart/PartOutput.class
+com/github/danieln/multipart/MultipartInput.class
+com/github/danieln/multipart/PartOutput$Header.class
+com/github/danieln/multipart/PartOutputStream.class

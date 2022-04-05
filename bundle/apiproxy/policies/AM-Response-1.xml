@@ -1,0 +1,15 @@
+<AssignMessage name='AM-Response-1'>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <Copy source="request">
+    <Payload>true</Payload>
+    <Headers>
+      <Header name='Content-type'/>
+      <Header name='SOAPAction'/>
+      <Header name='MIME-Version'/>
+    </Headers>
+  </Copy>
+  <Set>
+    <StatusCode>200</StatusCode>
+    <ReasonPhrase>OK</ReasonPhrase>
+  </Set>
+</AssignMessage>

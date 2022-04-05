@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy todir="../../bundle/apiproxy/resources/java">
+      <fileset dir="/Users/bharathnetkunte/Downloads/Apigee-Java-XOP-Handler-main_2/callout/execution/target">
+        <include name="apigee-custom-xop-handler-20210713.jar" />
+        <include name="lib/*.jar" />
+        <exclude name="lib/message-flow-1.0.0.jar" />
+        <exclude name="lib/expressions-1.0.0.jar" />
+      </fileset>
+      <mapper type="flatten" />
+    </copy>
+  </target>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apigee-custom-xop-handler" />
+        <module name="multipart-handler" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apigee-custom-xop-handler" target="1.8" />
+      <module name="multipart-handler" target="1.5" />
+      <module name="xop-editor-callout" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

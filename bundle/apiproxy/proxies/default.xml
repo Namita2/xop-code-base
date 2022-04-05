@@ -1,0 +1,142 @@
+<ProxyEndpoint name='default'>
+  <Description>Proxy for Java callout XOP Handler</Description>
+  <HTTPProxyConnection>
+    <BasePath>/xop-handler</BasePath>
+    <Properties/>
+    <VirtualHost>secure</VirtualHost>
+  </HTTPProxyConnection>
+
+  <FaultRules/>
+  <DefaultFaultRule name="default-fault-rule">
+    <Step>
+      <Name>AM-Inject-Proxy-Revision-Header</Name>
+    </Step>
+    <AlwaysEnforce>true</AlwaysEnforce>
+  </DefaultFaultRule>
+
+  <PreFlow name='PreFlow'>
+      <Request/>
+      <Response>
+        <Step>
+          <Name>AM-CleanResponseHeaders</Name>
+        </Step>
+      </Response>
+  </PreFlow>
+  <PostFlow name='PostFlow'>
+      <Request/>
+      <Response>
+        <Step>
+          <Name>AM-Inject-Proxy-Revision-Header</Name>
+        </Step>
+      </Response>
+  </PostFlow>
+  <PostClientFlow name='PostFlow'>
+      <Request/>
+      <Response>
+      </Response>
+  </PostClientFlow>
+
+  <Flows>
+    <Flow name='test 1'>
+      <Description>edit a XOP document</Description>
+      <!--
+          Example invocation:
+
+       curl -i -X POST -d @xopdoc.txt https://${ORG}-${ENV}.apigee.net/xop-handler/t1
+
+      -->
+      <Request>
+        <Step>
+          <Name>Java-ProcessXop-1</Name>
+        </Step>
+      </Request>
+
+      <Response>
+        <Step>
+          <Name>AM-Response-1</Name>
+        </Step>
+      </Response>
+      <Condition>(proxy.pathsuffix MatchesPath "/t1") and (request.verb = "POST")</Condition>
+    </Flow>
+
+    <Flow name='test 2'>
+      <Description>parse a XOP document and extract soap</Description>
+      <!--
+          Example invocation:
+
+       curl -i -X POST -d @xopdoc.txt https://${ORG}-${ENV}.apigee.net/xop-handler/t2
+
+      -->
+      <Request>
+        <Step>
+          <Name>Java-ProcessXop-2</Name>
+        </Step>
+      </Request>
+
+      <Response>
+        <Step>
+          <Name>AM-Response-2</Name>
+        </Step>
+      </Response>
+      <Condition>(proxy.pathsuffix MatchesPath "/t2") and (request.verb = "POST")</Condition>
+    </Flow>
+
+    <Flow name='test 3'>
+      <Description>parse a XOP package and transform it to embedded form</Description>
+      <!--
+          Example invocation:
+
+       curl -i -X POST -d @xopdoc.txt https://${ORG}-${ENV}.apigee.net/xop-handler/t3
+
+      -->
+      <Request>
+        <Step>
+          <Name>Java-ProcessXop-3</Name>
+        </Step>
+      </Request>
+
+      <Response>
+        <Step>
+          <Name>AM-Response-1</Name>
+        </Step>
+      </Response>
+      <Condition>(proxy.pathsuffix MatchesPath "/t3") and (request.verb = "POST")</Condition>
+    </Flow>
+
+    <Flow name='test 4'>
+      <Description>parse a XOP package and transform it to embedded form, then XMLToJSON</Description>
+      <!--
+          Example invocation:
+
+       curl -i -X POST -d @xopdoc.txt https://${ORG}-${ENV}.apigee.net/xop-handler/t4
+
+      -->
+      <Request>
+        <Step>
+          <Name>Java-ProcessXop-3</Name>
+        </Step>
+        <Step>
+          <Name>XMLToJSON-1</Name>
+        </Step>
+      </Request>
+
+      <Response>
+        <Step>
+          <Name>AM-Response-4</Name>
+        </Step>
+      </Response>
+      <Condition>(proxy.pathsuffix MatchesPath "/t4") and (request.verb = "POST")</Condition>
+    </Flow>
+
+    <Flow name='unknown request'>
+      <Request>
+        <Step><Name>RF-UnknownRequest</Name></Step>
+      </Request>
+      <Response/>
+    </Flow>
+
+  </Flows>
+
+  <RouteRule name='Loopback'/>
+
+</ProxyEndpoint>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/execution/apigee-custom-xop-handler.iml" filepath="$PROJECT_DIR$/execution/apigee-custom-xop-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/multipart-handler.iml" filepath="$PROJECT_DIR$/library/multipart-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xop-editor-callout.iml" filepath="$PROJECT_DIR$/xop-editor-callout.iml" />
+    </modules>
+  </component>
+</project>

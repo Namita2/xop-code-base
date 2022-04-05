@@ -1,0 +1,8 @@
+com/google/apigee/xml/XmlUtils$1.class
+com/google/apigee/xml/XPathEvaluator$CustomNamespaceResolver.class
+com/google/apigee/IOUtil.class
+com/google/apigee/xml/XmlUtils.class
+com/google/apigee/edgecallouts/XopHandler.class
+com/google/apigee/edgecallouts/CalloutBase.class
+com/google/apigee/edgecallouts/XopHandler$XopAction.class
+com/google/apigee/xml/XPathEvaluator.class
